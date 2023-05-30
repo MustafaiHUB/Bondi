@@ -1,0 +1,199 @@
+/* 1rem => 16px */
+/* Bootstrap uses rem not px */
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --gold-color: goldenrod;
+  --section-color: #eff7fa;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--gold-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-color);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.section {
+  background-color: var(--section-color);
+}
+#scroll-top {
+  background-color: var(--gold-color);
+  color: var(--dark-color);
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: translateX(100px);
+}
+#scroll-top:hover {
+  background-color: silver;
+}
+/* START HEADER */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: #ffff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: #ffff;
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+  color: #ffff;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--gold-color);
+}
+.main-btn:hover {
+  background-color: var(--red-color);
+  color: #ffff;
+}
+/* END HEADER */
+
+/* START LANDING SECTION */
+#landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+/* END LANDING SECTION */
+
+/* START FEATURES */
+.main-title::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 120px;
+  background-color: var(--green-color);
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+}
+#features h3 {
+  color: var(--gold-color);
+}
+#features .icon-holder {
+  height: 200px;
+}
+#features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+#features .icon-holder .number {
+  font-size: 12rem;
+  top: 0;
+  color: var(--section-color);
+}
+#features .icon-holder .other-icon {
+  /* font-size: 50px; */
+  color: var(--green-color);
+  /* bottom: 0; */
+}
+/* END FEATURES */
+
+/* START OUR WORK */
+#our-work ul li {
+  transition: 0.5s;
+}
+#our-work ul li.active,
+#our-work ul li:hover {
+  background-color: var(--red-color);
+  color: var(--gold-color);
+}
+#our-work .overlay {
+  background-color: #33d1cc72;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 24px);
+  transform: translateX(calc(-100% - 15px));
+  transition: all 0.5s;
+}
+#our-work .item:hover .overlay {
+  transform: translateX(0);
+}
+/* END OUR WORK */
+
+/* START TEAM */
+#team h2 {
+  color: var(--gold-color);
+}
+#team h3 {
+  background-color: var(--green-color);
+}
+/* END TEAM */
+
+/* START START YOUR PROJECT */
+#start-project {
+  background-color: var(--dark-color);
+}
+/* END START YOUR PROJECT */
+
+/* START SUBSCRIBE */
+#subscrib {
+  background-color: var(--gold-color);
+}
+#subscrib input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #ffff;
+}
+#subscrib input[type="text"]:focus {
+  outline: none;
+}
+#subscrib ::placeholder {
+  color: #ffff;
+}
+#subscrib input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--gold-color);
+  border: none;
+  outline: none;
+}
+/* END SUBSCRIBE */
+
+/* START FOOTER */
+footer {
+  background-color: var(--dark-color);
+}
+footer .created {
+  color: var(--green-color);
+}
+footer .name {
+  color: var(--gold-color);
+}
+footer .social svg {
+  width: 20px;
+  height: 20px;
+}
+footer .social .facebook {
+  background-color: #1877f2;
+}
+footer .social .twitter {
+  background-color: #1da1f2;
+}
+footer .social .linkedin {
+  background-color: #0077b5;
+}
+footer .social .youtube {
+  background-color: #ff0000;
+}
+/* END FOOTER */
